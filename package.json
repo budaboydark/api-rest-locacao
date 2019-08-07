@@ -1,0 +1,29 @@
+{
+  "name": "api-rest-locacao",
+  "version": "1.0.0",
+  "description": "api rest para locacao de filmes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budaboydark/api-rest-locacao.git"
+  },
+  "author": "Rodrigo Baldissera da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/budaboydark/api-rest-locacao/issues"
+  },
+  "homepage": "https://github.com/budaboydark/api-rest-locacao#readme",
+  "dependencies": {
+    "argon2": "^0.24.0",
+    "consign": "^0.1.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
