@@ -1,31 +1,12 @@
-require('dotenv').config();
-
 var mysql = require('mysql');
-
-const env = (process.env.APP_ENV).toUpperCase();
 var params = {
-	dev : {
-		host : process.env.DBHOST_DEV,
-		user : process.env.DBUSER_DEV,
-		password : process.env.DBPASS_DEV,
-		database : process.env.DBDATABASE_DEV,
-		port : process.env.DBPORT_DEV,
-
-	},
-	local : { 
-		host : process.env.DBHOST_LOCAL,
-		user : process.env.DBUSER_LOCAL,
-		password : process.env.DBPASS_LOCAL,
-		database : process.env.DBDATABASE_LOCAL,
-		port : process.env.DBPORT_LOCAL,
-	}
+	host : 'localhost',
+	user : 'cliente',
+	password : 'teste',
+	database : 'locadora',
+	port : '3306',
 }
-var conn = params.local;
-	if(env == 'DEV'){
-		console.log('DEV')
-		conn = params.dev;
-	}
-var connMysql = mysql.createConnection(conn)
+var connMysql = mysql.createConnection(params)
 
 	connMysql.connect(function(err){
 		if(err){
