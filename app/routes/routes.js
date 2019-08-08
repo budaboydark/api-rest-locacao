@@ -33,4 +33,9 @@ module.exports = (server) => {
         return
     })
 
+    server.delete('/locacao', (req, res, next) => {
+        server.app.controllers.locacao.devolver(server, req, res)
+        return
+    })
+
 }
