@@ -1,6 +1,6 @@
 # api-rest-locacao
 API REST para locacao de filmes
-# requisitos do sistema:
+# Requisitos do sistema:
 - NODEJS com NPM
 - DB MySQL
 # Configuração:
@@ -11,3 +11,6 @@ importar dump ./Dump20190808.sql
 
 # Iniciando em Produção
  ``` node index.js ```
+ 
+# Documento com endpoints e métodos de entrada e saída
+abrir arquivo ./DOC-API-LOCACAO.pdf
