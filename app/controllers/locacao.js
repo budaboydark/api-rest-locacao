@@ -23,7 +23,7 @@ module.exports.locar = async (server, req, res) => {
                                 if(erro){
                                     res.status(500).send(erro)
                                 }else{
-                                    res.send({message:"filme locado com sucesso"})
+                                    res.send({message:"filme locado com sucesso", codigoLocacao: responseLocacao.insertId})
                                 }
                             })
                         }else{
