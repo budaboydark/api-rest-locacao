@@ -1,8 +1,8 @@
 var mysql = require('mysql');
 var params = {
 	host : 'localhost',
-	user : 'cliente',
-	password : 'teste',
+	user : 'root',
+	password : 'root',
 	database : 'locadora',
 	port : '3306',
 }
